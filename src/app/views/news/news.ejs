@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" , href="logo.png" ,
+        type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pagina Principal</title>
+</head>
+
+<body>
+
+    <div id="general">
+
+        <br>
+        <div id="center">
+
+        <div id="subtitulo">
+            <h3>Dtos agenda</h3>
+        </div>
+
+        <!-- SQL -->
+        <br>
+        <div id="body">
+            <table border="3">
+                <tr>
+                    <td>Nombre</td>
+                    <td>Apellidos</td>
+                    <td>Dirección</td>
+                    <td>Teléfono</td>
+                    <td>Edad</td>
+                </tr>
+
+                <% for(var i=0; i < news.length; i++) { %>
+                    <tr>
+                        <th>
+                            <%= news[i].nombre %>
+                        </th>
+                        <th>
+                            <%= news[i].apellidos %>
+                        </th>
+                        <th>
+                            <%= news[i].dirección %>
+                        </th>
+                        <th>
+                            <%= news[i].teléfono %>
+                        </th>
+                        <th>
+                            <%= news[i].edad %>
+                        </th>
+                    </tr>
+                    <% } %>
+
+            </table>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

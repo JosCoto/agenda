@@ -1,6 +1,6 @@
-CREATE DATABASE epiz_28670067_ejercicioagendahost ;
+CREATE DATABASE ejercicioagendahost ;
 
-USE epiz_28670067_ejercicioagendahost ;
+USE ejercicioagendahost ;
 
 CREATE TABLE agenda(
 

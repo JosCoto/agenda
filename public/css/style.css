@@ -10,7 +10,6 @@ body { /*body = todo el documento*/
     background-image: url(../fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /*background: url(https://cdn.wallpapersafari.com/28/52/q6mQEi.jpg);*/
     
 }
 
@@ -29,13 +28,13 @@ div#general{
     border-left: 2px solid rgb(77, 24, 70);
 }
 
-div#izquierda{
+div#center{
 
     float: left;
     width: 220px;
     height: 632px;
     text-align: center;
-    /*background-color:rgb(17, 19, 19);*/
+
 
 }
 
@@ -44,39 +43,17 @@ div#subtitulo{
     float: left;
     width: 950px;
     height: 50px;
-    /*background-color: rgb(17, 19, 19);*/
-    /*border-bottom: 3px solid lightseagreen;*/
-}
-
-div#emails{
-
-    text-align: center;
-    /*width: 1170px;*/
-    width: 1170px;
-    height: 240px;
-    /*background-color: rgb(73, 22, 121);*/
-    /*border-bottom: 3px solid lightseagreen;*/
 
 }
 
-div#emails2{
-    
-    margin-left: 650px;
-    width: 400px;
-    height: 100px;
-    position:fixed;
-    /*background-color: rgb(182, 154, 207);*/
-    /*border-bottom: 3px solid lightseagreen;*/
 
-}
 
 div#body{
 
     margin-top: 15px;
     width: 1170px;
     height: 250px;
-    /*border-top: 3px solid lightseagreen;
-    border-bottom: 3px solid lightseagreen;*/
+ 
 
 }
 
@@ -85,8 +62,7 @@ div#texto{
     text-align: center;
     width: 1170px;
     height: 240px;
-    /*background-color: rgb(73, 22, 121);*/
-    /*border-bottom: 3px solid lightseagreen;*/
+
 
 }
 
@@ -136,9 +112,7 @@ h2{
     margin-left: 37%;
     /*Color*/
     color:rgb(204, 106, 191);
-    /*color:lightseagreen;*/
-    /*margin: 20px 50px;*/
-    /*width: 25%;*/
+ 
 }
 
 h3{
@@ -149,9 +123,7 @@ h3{
     text-align: center;
     /*Color*/
     color:rgb(182, 11, 159);
-    /*color:lightseagreen;*/
-    /*margin: 20px 50px;*/
-    /*width: 25%;*/
+
 }
 
 h4{
@@ -163,9 +135,7 @@ h4{
     margin-left: 8%;
     /*Color*/
     color:rgb(204, 106, 191);
-    /*color:lightseagreen;*/
-    /*margin: 20px 50px;*/
-    /*width: 25%;*/
+ 
 }
 
 h5{
@@ -175,8 +145,7 @@ h5{
     text-align: left;
     /*Color*/
     color:skyblue;
-    /*margin: 20px 50px;*/
-    /*width: 25%;*/
+
 }
 
 /* TEXT AREA*/
@@ -184,7 +153,6 @@ h5{
 textarea{
 
     position:fixed;
-    /*background-color: rgb(182, 154, 207);*/
-    /*border-bottom: 3px solid lightseagreen;*/
+
 
 }

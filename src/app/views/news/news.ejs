@@ -1,66 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" , href="logo.png" ,
-        type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Pagina Principal</title>
-</head>
+<html><head><meta charset="utf-8"> </head>
 
 <body>
 
-    <div id="general">
+<?php
 
-        <br>
-        <div id="center">
+//Ejemplo aprenderaprogramar.com
 
-        <div id="subtitulo">
-            <h3>Dtos agenda</h3>
-        </div>
+function mostrarDatos ($resultados) {
 
-        <!-- SQL -->
-        <br>
-        <div id="body">
-            <table border="3">
-                <tr>
-                    <td>Nombre</td>
-                    <td>Apellidos</td>
-                    <td>Dirección</td>
-                    <td>Teléfono</td>
-                    <td>Edad</td>
-                </tr>
+if ($resultados !=NULL) {
 
-                <% for(var i=0; i < news.length; i++) { %>
-                    <tr>
-                        <th>
-                            <%= news[i].nombre %>
-                        </th>
-                        <th>
-                            <%= news[i].apellidos %>
-                        </th>
-                        <th>
-                            <%= news[i].dirección %>
-                        </th>
-                        <th>
-                            <%= news[i].teléfono %>
-                        </th>
-                        <th>
-                            <%= news[i].edad %>
-                        </th>
-                    </tr>
-                    <% } %>
+echo "- Nombre: ".$resultados['nombre']."<br/> ";
 
-            </table>
-        </div>
-    </div>
+echo "- Apellidos: ".$resultados['apellidos']."<br/>";
 
-    <script>
+echo "- Direccion: ".$resultados['direccion']."<br/>";
 
-    </script>
+echo "- Teléfono: ".$resultados['teléfono']."<br/>";
+
+echo "- Edad: ".$resultados['edad']."<br/>";}
+
+else {echo "<br/>No hay más datos: <br/>".$resultados;}
+
+}
+
+$link = mysqli_connect("bo5i2augxi6wyxfepmkw-mysql.services.clever-cloud.com","u6begkzicprcsa1o","nhSwEIh4dN85kCuTWaNA");
+
+mysqli_select_db($link,"bo5i2augxi6wyxfepmkw");
+
+$tildes = $link->query("SET NAMES 'utf8'"); //Para que se muestren las tildes correctamente
+
+$result = mysqli_query($link, "SELECT * FROM Agenda");
+
+$extraido1= mysqli_fetch_array($result);
+
+mostrarDatos($extraido1);
+
+$extraido2= mysqli_fetch_array($result);
+
+mostrarDatos($extraido2);
+
+$extraido3= mysqli_fetch_array($result);
+
+mostrarDatos($extraido3);
+
+$extraido4= mysqli_fetch_array($result);
+
+mostrarDatos($extraido4);
+
+$extraido5= mysqli_fetch_array($result);
+
+mostrarDatos($extraido5);
+
+$extraido6= mysqli_fetch_array($result);
+
+mostrarDatos($extraido6);
+
+mysqli_free_result($result);
+
+mysqli_close($link);
+
+?>
 
 </body>
 

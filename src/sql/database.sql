@@ -4,7 +4,6 @@ USE ejercicioagendahost ;
 
 CREATE TABLE agenda(
 
-  CREATE TABLE IF NOT EXISTS agenda,
     nombre VARCHAR(50),
     apellidos VARCHAR(50),
     direccion VARCHAR(50),
